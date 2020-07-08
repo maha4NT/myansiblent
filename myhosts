@@ -18,4 +18,10 @@
 
 
 
+[mywebservers:vars]
+key=value
+mywebserveronubuntu=apache2
+mywebserveronredhat=httpd
+
+
 
