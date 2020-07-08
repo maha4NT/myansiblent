@@ -1,19 +1,19 @@
 
-[webservers]
+[mywebservers]
 172.31.5.193
 172.31.7.14
 
 
-[applications]
+[myapplications]
 172.31.5.55
 172.31.5.65
 
 
-[ubuntuservers]
+[myubuntuservers]
 172.31.5.193
 
 
-[redhatservers]
+[myredhatservers]
 172.31.7.14
 
 
