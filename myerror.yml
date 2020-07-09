@@ -1,0 +1,6 @@
+---
+- hosts: mywebservers
+  become: yes
+  tasks: 
+  - name: i want know host name
+    command:  hostname -f

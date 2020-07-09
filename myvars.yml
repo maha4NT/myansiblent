@@ -12,3 +12,4 @@
   - name: display mykey2
     debug:
       msg: "{{mykey2}}"
+      
