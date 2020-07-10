@@ -1,0 +1,18 @@
+---
+- hosts: mywebservers
+  become: yes
+  tasks:
+  - name: Task 1 i want to install git
+    apt:
+      name: git
+      state: present
+
+  - name: Task 2i want to install wget
+    apt:
+      nameeeee: wget
+      state: present
+
+  - name: Task 3 i want to install tree
+    apt:
+      name: tree
+      state: present
