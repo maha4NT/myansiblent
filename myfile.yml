@@ -1,3 +1,9 @@
 ---
-- key: values
-# space notation
+- hosts: mywebservers
+  become: yes
+  tasks:
+  - name: i want to create a file in my node side
+    file:
+      path: /home/ubuntu/mahatext
+      state: touch
+    
