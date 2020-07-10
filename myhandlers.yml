@@ -10,7 +10,11 @@
      state: present
     notify: restartwebserver
 
-
+  - name:  i want to copy index.j2 from master to all node webserver
+    template:
+       src: myindex.j2
+       dest: /var/www/html/index.html
+    notify: restartwebserver
 
   
   handlers:
