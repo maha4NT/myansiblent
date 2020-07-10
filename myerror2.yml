@@ -7,11 +7,13 @@
       name: git
       state: present
 
-  - name: Task 2i want to install wget
+  - name: Task 2 i want to install wget
     apt:
       nameeeee: wget
       state: present
+    ignore_errors: yes
 
+    
   - name: Task 3 i want to install tree
     apt:
       name: tree
