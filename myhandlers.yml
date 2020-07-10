@@ -8,7 +8,7 @@
     apt:
      name: apache2
      state: present
-     notify: restartwebserver
+    notify: restartwebserver
 
 
 
