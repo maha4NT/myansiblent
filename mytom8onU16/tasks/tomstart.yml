@@ -1,6 +1,6 @@
 ---
 - name: tom reload
-   systemd:
+  systemd:
     name: tomcat
     enabled: yes
     daemon_reload: yes
