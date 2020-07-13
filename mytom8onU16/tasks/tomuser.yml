@@ -1,0 +1,5 @@
+---
+- name: i want copy tom user file into all nodes sode
+  template:
+    src: templates/mytomuser.j2
+    dest: /opt/tomcat/conf/tomcat-users.xml

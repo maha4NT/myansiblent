@@ -1,0 +1,10 @@
+---
+- name: copy manager file
+  template:
+    src: templates/tommanger.j2
+    dest: /opt/tomcat/webapps/manager/META-INF/context.xml
+
+- name: copy host manager file 
+  template:
+    src:  templates/tomhostmanger.j2
+    dest:  /opt/tomcat/webapps/host-manager/META-INF/context.xml

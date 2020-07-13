@@ -8,8 +8,6 @@
     mode: '0755'
 
 - name: tom tar file extract
-  unarchive:
-    src: /home/ubuntu/apache-tomcat-8.5.5.tar.gz
-    dest: /opt/tomcat
-    extra_opts: [--strip-components=1]
-    remote_src: yes
+  command:
+    cmd:  tar xzvf /home/ubuntu/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
+    creates: /opt/tomcat/LICENSE
