@@ -5,7 +5,7 @@
   - name: uninstall git,tree,wget
     apt:
       name: "{{ item }}"
-      state: present
+      state: absent
     loops:
        - git
        - tree
