@@ -1,15 +1,14 @@
 ---
-- hosts: myapplications
+- hosts: applications
   become: yes
   tasks:
-  - name: uninstall git,tree,wget
+  - name: loop
     apt:
-      name: "{{item}}"
-      state: absent
-    loops:
-       - git
-       - tree
-       - wget
-       
+      name: "{{ item }}"
+      state: present
+    loop:
+      - git
+      - tree
+      - wget
     
   
