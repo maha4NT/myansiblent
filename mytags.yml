@@ -4,7 +4,7 @@
   tasks:
   - name: uninstall git,tree,wget
     apt:
-      name: "{{ item }}"
+      name: "{{item}}"
       state: absent
     loops:
        - git
